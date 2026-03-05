@@ -2,4 +2,36 @@
 
 body {
   font-family: 'IBM Plex Mono', monospace;
+  cursor: none;
+}
+
+* {
+  cursor: none !important;
+}
+
+#cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2b3fff;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.18s;
+  box-shadow: 0 0 10px 3px rgba(43, 63, 255, 0.22);
+}
+
+#cursor-ring {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(43, 63, 255, 0.55);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.18s;
 }
