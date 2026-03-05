@@ -7,8 +7,8 @@ import { siteConfig } from "../config";
   class="relative isolate overflow-hidden bg-white py-24 md:h-screen"
   style={`--accent-color: ${siteConfig.accentColor}`}
 >
-  <!-- Particle canvas — scoped to hero only -->
-  <canvas id="particle-canvas"></canvas>
+  <!-- Particle canvas — scoped to hero only; pointer-events: none so it never blocks clicks -->
+  <canvas id="particle-canvas" style="pointer-events: none;"></canvas>
 
   <!-- Gradient overlay -->
   <div
@@ -154,7 +154,7 @@ import { siteConfig } from "../config";
     </div>
   </div>
   <div
-    class="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-24 flex gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-700 animate-fade-in animation-delay-600"
+    class="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-24 flex gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-700 animate-fade-in animation-delay-600 z-10"
   >
     {
       siteConfig.social?.email && (
