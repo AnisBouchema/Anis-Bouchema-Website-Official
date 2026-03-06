@@ -330,12 +330,14 @@ import { siteConfig } from "../config";
     position: relative;
     z-index: 10;
     pointer-events: auto;
-    transition: background 0.2s ease, color 0.2s ease;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
   }
 
   .resume-btn:hover {
     background: #2b3fff;
     color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(43, 63, 255, 0.3);
   }
 
   /* Canvas is pinned to the hero bounds, below all content */
