@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Anis Bouchema",
   title: "Business Technology Management Student & Franchise Operator",
   description: "Portfolio website of Anis Bouchema",
-  accentColor: "#1d4ed8",
+  accentColor: "#2b3fff",
   social: {
     email: "anis.bouchema@torontomu.ca",
     linkedin: "https://linkedin.com/in/anis-bouchema",
@@ -10,8 +10,18 @@ export const siteConfig = {
   aboutMe:
     "I'm a Business Technology Management student at Toronto Metropolitan University with hands-on experience running two franchise dessert retail locations generating over $550K in annual revenue. Since 2019, I've grown from Ice Cream Server to General Manager to Business Operator — and in 2022, I launched the High Park (Bloor) location end-to-end, from site selection and lease negotiation through hiring, training, and opening day. Day to day, I manage staffing, inventory planning, supplier relationships, and performance reporting across both sites. I build Excel dashboards from POS exports to track sales trends, labor efficiency, product mix, and variances — then translate those numbers into action plans. I've developed real P&L responsibility as an undergrad, which shapes how I think about every decision. Outside of operations, I founded the Sustainable Business Association at TMU from scratch, building the team, systems, and partner pipeline needed to run events with 80+ attendees. I'm interested in roles that combine business and technology: operations analytics, business analysis, financial reporting, process improvement, and data storytelling.",
   skills: [
-    "Excel (Advanced)",
-    "Python",
+    "Microsoft Excel (Advanced)",
+    "Financial Modeling & Reporting",
+    "Inventory & Supply Chain Management",
+    "Workforce Planning & Scheduling",
+    "Business Analytics",
+    "Data Visualization",
+    "Operations Management",
+    "Process Automation",
+    "Strategic Planning",
+    "AI & Automation Tools",
+    "Machine Learning Fundamentals",
+    "Python (Fundamentals)",
     "Power BI",
     "Power Automate",
     "SharePoint Online",
@@ -30,46 +40,52 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "Executive Decision Dashboard",
+      name: "La Diperie — Dual-Location Inventory Optimization Model",
+      category: "Operations & Supply Chain",
+      tag: "Operations",
       description:
-        "A 4-page professional KPI dashboard built on a synthetic La Diperie dataset, covering revenue trends, labor efficiency, inventory performance, and product mix. Built in Python (pandas, matplotlib) and exported as a formatted multi-tab Excel workbook with conditional formatting, dynamic charts, and summary KPIs.",
+        "Built a multi-sheet Excel workbook to coordinate inventory across La Diperie Oakville and High Park. Covers 262 SKUs — calculates par levels, safety stock, and reorder points, generates inter-store transfer suggestions, tracks shared bulk orders, and produces a settlement summary. Includes a Low Cash Mode that enforces spending caps.",
       link: "",
-      skills: ["Python", "Excel", "pandas", "matplotlib"],
+      skills: [
+        "Excel",
+        "Inventory Planning",
+        "Supply Chain",
+        "Operations Management",
+        "Data Modeling",
+        "Process Automation",
+      ],
     },
     {
-      name: "AI Financial Reporting Dashboard",
+      name: "La Diperie & La Fayette — 16-Week Resource Scheduler",
+      category: "Workforce Planning",
+      tag: "Scheduling",
       description:
-        "A 7-sheet Excel workbook featuring cash flow forecasting, margin sensitivity analysis, revenue variance tracking, and automated alerts for threshold breaches. Includes dynamic data tables and a clean executive summary tab demonstrating financial reporting and commercial analysis skills.",
+        "Designed a 16-week staffing and capacity planner for a team of 7 across three businesses — La Diperie Oakville, La Diperie High Park, and La Fayette coffee shop. Tracks weekly demand vs. capacity per person, flags over-allocation, manages 29 tasks across 7 projects, and surfaces staffing gaps during peak season.",
       link: "",
-      skills: ["Excel", "Financial Analysis", "Forecasting"],
+      skills: [
+        "Excel",
+        "Workforce Planning",
+        "Capacity Modeling",
+        "Multi-Site Operations",
+        "Scheduling Automation",
+        "Data Validation",
+      ],
     },
     {
-      name: "Process Automation & Reporting Workflow",
+      name: "La Diperie — Financial Reporting Dashboard (FY 2024–2025)",
+      category: "Finance & Analytics",
+      tag: "Finance",
       description:
-        "Simulated a weekly operational reporting pipeline using Power Automate and SharePoint Online — automating data collection, formatting, and report distribution for a multi-location retail context. Documented with process flow diagrams, automation logic, and business impact summary.",
+        "Consolidated financial dashboard for two La Diperie locations on a $550K+ revenue base. Includes a full monthly P&L, revenue trend tracking by location, cash flow forecast, EBITDA and net margin tracking, variance alerts against budget, and KPI flags including YoY growth and average order value.",
       link: "",
-      skills: ["Power Automate", "SharePoint Online"],
-    },
-    {
-      name: "SBA Partnership Pipeline System",
-      description:
-        "A full partner and sponsor management workbook for SBA operations — built with a prospect database, outreach stage tracker, pipeline analytics dashboard, and sponsorship ROI calculator. Used to manage outreach to 50+ potential partners and track pipeline status across the semester.",
-      link: "",
-      skills: ["Excel", "KPI Reporting", "Project Coordination"],
-    },
-    {
-      name: "Inventory Optimization Model",
-      description:
-        "Built a demand-forecasting and reorder-point model using POS sales history from La Diperie. Incorporates safety stock logic, EOQ triggers, and time-series analysis to flag restocking needs. Designed to reduce waste and prevent stockouts across two locations with different demand patterns.",
-      link: "",
-      skills: ["Excel", "Forecasting", "Inventory Planning"],
-    },
-    {
-      name: "Resource Scheduling Tool",
-      description:
-        "A shift-scheduling model covering two retail locations — with formulas, data validation, and conditional formatting to manage staff availability, role coverage, and labor hours. Built to reduce scheduling conflicts and optimize coverage across peak and off-peak periods.",
-      link: "",
-      skills: ["Excel", "Process Improvement"],
+      skills: [
+        "Excel",
+        "Financial Modeling",
+        "P&L Analysis",
+        "Cash Flow Forecasting",
+        "Business Analytics",
+        "Data Visualization",
+      ],
     },
   ],
   experience: [
